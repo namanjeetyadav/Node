@@ -23,5 +23,5 @@ var options = {
     }
 };
 
-console.log(pdf)
+
 
