@@ -3,7 +3,7 @@ var pdf = require("pdf-node");
 var fs = require("fs");
 
 // Read HTML Template
-var html = fs.readFileSync("template.html", "utf8");
+var html = fs.readFileSync("96_modules.html", "utf8");
 var options = {
     format: "A3",
     orientation: "portrait",
@@ -23,5 +23,36 @@ var options = {
     }
 };
 
+var users = [
+    {
+      name: "tom",
+      age: "21",
+    },
+    {
+      name: "dick",
+      age: "23",
+    },
+    {
+      name: "harry",
+      age: "29",
+    },
+  ];
+  var document = {
+    html: html,
+    data: {
+      users: users,
+    },
+    path: "./output.pdf",
+    type: "pdf",
+  };
 
+
+
+  pdf(document, options)
+  .then((res) => {
+    console.log(res);
+  })
+  .catch((error) => {
+    console.error(error);
+  });
 
