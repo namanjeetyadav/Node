@@ -1,5 +1,5 @@
 const hello = () =>{
-    console.log("Importing from module 1")
+    console.log("Hello Naman")
 }
 
-module.export = hello;
+module.exports = hello;
