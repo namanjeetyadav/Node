@@ -2,4 +2,9 @@ const hello = () =>{
     console.log("Hello Naman")
 }
 
-module.exports = hello;
+const ahello = (name) =>{
+    console.log("Hello" + name)
+}
+module.exports = {hello, ahello};
+
+
