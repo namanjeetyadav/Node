@@ -7,9 +7,10 @@
 // Using destructing 
 // const {hello, ahello} = require("./module1")
 
-import { hello, ahello } from "./module2.js";
+import namanjeet, { hello, ahello } from "./module2.js";
 hello();
 ahello(" Naman");
+namanjeet()
 
 
 

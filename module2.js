@@ -17,7 +17,7 @@ export const ahello = (name) => {
     console.log("Hello " + name)
 }
 
-export default namanjeet = () => {
+const namanjeet = () => {
    console.log("Hello namanjeet")
 }
-
+export default namanjeet
